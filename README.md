@@ -1,18 +1,27 @@
-## Atividade Proposta - Calcular Imposto de Renfa
+## Atividade Proposta - Calcular Imposto de Renda
 
-Ler os dados de uma reserva de hotel (número do quarto, data de entrada e data de saída) e mostrar os dados da reserva, inclusive sua duração em
-dias. Em seguida, ler novas datas de entrada e saída, atualizar a reserva, e mostrar novamente a reserva com os dados atualizados. O programa não 
-deve aceitar dados inválidos para a reserva, conforme as seguintes regras:
-#### - Alterações de reserva só podem ocorrer para datas futuras
-#### - A data de saída deve ser maior que a data de entrada
+Ler os dados de N contribuintes (N fornecido pelo usuário), os quais podem ser pessoa física ou pessoa jurídica, e depois mostrar o valor do imposto pago por cada um,
+bem como o total de imposto arrecadado.
+
+Os dados de pessoa física são: nome, renda anual e gastos com saúde. Os dados de pessoa jurídica são nome, renda anual e número de funcionários. As regras para cálculo de imposto são as
+seguintes:
+
+#### Pessoa física: pessoas cuja renda foi abaixo de 20000.00 pagam 15% de imposto. Pessoas com renda de 20000.00 em diante pagam 25% de imposto. Se a pessoa teve gastos com saúde, 50%
+destes gastos são abatidos no imposto.
+Exemplo: uma pessoa cuja renda foi 50000.00 e teve 2000.00 em gastos com saúde, o imposto fica: (50000 * 25%) - (2000 * 50%) = 11500.00
+
+#### Pessoa jurídica: pessoas jurídicas pagam 16% de imposto. Porém, se a empresa possuir mais de 10 funcionários, ela paga 14% de imposto.
+Exemplo: uma empresa cuja renda foi 400000.00 e possui 25 funcionários, o imposto fica:
+400000 * 14% = 56000.00
 
 ### Conceitos
-#### Estrutura try-catch
-#### Árevore de pacotes
-#### Exceções personalizadas
-#### Pilha de chamadas de métodos
+• Encapsulamento
+• Herança
+• Polimorfismo
+• Classes abstratas
+• Métodos abstratos
 
-![Diagrama de Classes](https://github.com/user-attachments/assets/47e43be1-ed99-4284-b7d5-7e0eb10ec057)
+![Diagrama de Classes](https://github.com/user-attachments/assets/75565dcd-9ed7-48a0-947f-6672b2bb8b5f)
 
 ### Estou estudando
 ![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) 
